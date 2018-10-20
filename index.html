@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div class="screen screen-start show">
+    <div class="panel">
+        <h1>The Battle of Heroes</h1>
+        <ul>
+            <li>Enter your name and press the start button</li>
+            <li>Go ahead by overcoming the obstacles</li>
+            <li>Destroy the monsters in your path</li>
+            <li>Use the skills to fight monsters</li>
+            <li>Each skill uses MP, but MP regenerates by 5MP/sec</li>
+        </ul>
+        <form>
+            <input type="text" id="username" placeholder="Enter your name, Hero!">
+            <input type="submit" id="startGame" class="disabled" value="Next!">
+        </form>
+    </div>
+</div>
+<div class="screen screen-game">
+    <div class="game-panel game-panel-user">
+        <div class="user-info">Username</div>
+        <div class="panel-xp">
+            <div class="score-value">
+                <span>100</span>
+            </div>
+        </div>
+        <div class="panel-mp">
+            <div class="score-value">
+                <span>100</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-panel game-panel-scores">
+        <div class="timer">Time: 00:00</div>
+        <div class="kills">Killed: 0</div>
+    </div>
+
+    <div class="game-panel game-panel-skills">
+        <img id="attack1" src="assets/img/skill-sword.png" alt="sword">
+        <img id="attack2" src="assets/img/skill-shield.png" alt="shield">
+        <img id="attack3" src="assets/img/skill-sword-3.png" alt="sword 3">
+        <img id="attack4" src="assets/img/skill-sword-8.png" alt="sword 8">
+    </div>
+
+    <div class="game-zone">
+
+        <img src="" alt="" class="attack4">
+
+    </div>
+
+   <!-- <img class="man" alt="" src="assets/animation/idle.gif">-->
+
+
+</div>
+<div class="screen screen-ranking">
+    <div class="panel">
+        <h1>Rating of Heroes!</h1>
+        <table id="ranking">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Username</th>
+                    <th>Killed mosters</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+
+
+            </tbody>
+
+        </table>
+        <button class="startAgain">Start again!</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="assets/js/script.js"></script>
+
+</body>
+</html>
